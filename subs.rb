@@ -26,7 +26,7 @@ post '/subscriptions' do
     exchange = "hive.exchanges.subscriptions.#{sub_id}"
 
     puts "# creating new exchange (exchange=#{exchange})"
-    ex = ch.topic(exchange)
+    ex = ch.topic(exchange, auto_delete: true)
 
     org_id = args['org']
     app_id = args['app']

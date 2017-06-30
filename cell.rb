@@ -23,7 +23,7 @@ post '/categories' do
     exchange = "hive.exchanges.categories.#{name}"
 
     puts "> creating new exchange (name=#{name}; exchange=#{exchange}"
-    ex = ch.topic(exchange)
+    ex = ch.topic(exchange, auto_delete: true)
 
     # bind to core with core as destination
     puts "binding to core (rk=#)"

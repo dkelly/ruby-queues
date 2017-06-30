@@ -17,7 +17,7 @@ puts '# channel is created'
 
 exchange = 'hive.exchanges.global.core'
 
-ex = ch.topic(exchange)
+ex = ch.topic(exchange, auto_delete: true)
 
 puts "# created #{exchange}"
 

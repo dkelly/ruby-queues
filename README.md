@@ -1,5 +1,3 @@
-![quick sketch](https://raw.githubusercontent.com/dkelly/ruby-queues/master/sketch.jpg)
-
 initial setup
 
     $ bundle install
@@ -52,3 +50,5 @@ output that the "suscribers" should show:
 
     < ex=hive.exchanges.categories.bar; rk=org0.app0
 	< body={"category":"hive.exchanges.categories.bar","effect":"created","details":{}}
+
+![quick sketch](sketch.jpg?raw=true)

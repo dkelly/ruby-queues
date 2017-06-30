@@ -1,3 +1,5 @@
+![quick sketch](https://raw.githubusercontent.com/dkelly/ruby-queues/master/sketch.jpg)
+
 initial setup
 
     $ bundle install

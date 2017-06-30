@@ -37,7 +37,7 @@ post '/subscriptions' do
       # TODO: let's everything through on org.app... decide if this is
       # correct or if it should be #
       puts "# binding to source (source=#{source}; org=#{org_id}; app=#{app_id})"
-      ex.bind(source, routing_key: "#{org_id}.#{app_id}.#")
+      ex.bind(source, routing_key: "#{org_id}.#{app_id}")
     end
 
     # single q for now
